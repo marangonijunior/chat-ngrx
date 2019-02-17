@@ -1,0 +1,83 @@
+.backlogin{
+  z-index: 0;
+  margin: -8px;
+  position: absolute;
+  width: 100vw;
+	height: 100vh;
+  background-color: #d5d5d5;
+}
+
+.login{
+  z-index: 5;
+  position: absolute;
+  margin-left: 15vw;
+  margin-top: 5vh;
+  width: 70vw;
+	height: 90vh;
+  box-shadow: 3px 3px 13px 0px rgba(0, 0, 0, .14), 0 3px 14px 2px rgba(0, 0, 0, .12), 0 5px 5px -3px rgba(0, 0, 0, .2);
+}
+
+.leftlogin{
+  position: relative;
+  float: left;
+  width: 50%;
+  height: 90vh;
+  /* background-color: #2A77F3; */
+  background-color: #d5d5d5
+;
+}
+
+.leftright{
+  position: relative;
+  float: left;
+  width: 50%;
+  height: 90vh;
+  background-color: #eff2f7;
+}
+
+.loginform{
+  width: 60%;
+  position: relative;
+  height: 55%;
+  margin-top: 25%;
+  margin-left: 20%;
+}
+
+.logo{
+  margin-left: 32%;
+  margin-top: 30%;
+  width: 40%;
+}
+
+.text-before-action{
+	color: #888;
+	font-family: "Roboto","Helvetica Neue",sans-serif;
+	font-size: 14px;
+}
+
+.welcome-text{
+	color: #666;
+	font-family: "Roboto","Helvetica Neue",sans-serif;
+	font-size: 22px;
+	font-weight: 400;
+	margin-bottom: 6px;
+	
+}
+
+.instructions-text{
+	color: #999;
+	font-family: "Roboto","Helvetica Neue",sans-serif;
+	font-size: 16px;
+	
+}
+
+
+.buttonText{
+  position: relative;
+  color: #1fb6ff;
+  font-size: 14px;
+  font-family: "Roboto","Helvetica Neue",sans-serif;
+  margin-left: 0%;
+  cursor: pointer;
+}
+

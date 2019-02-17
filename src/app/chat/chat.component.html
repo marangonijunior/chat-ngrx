@@ -1,0 +1,30 @@
+<div style="position:fixed;top:0;left:0;right:0;bottom:0;z-index:2">
+  <mat-toolbar class="fixed-header">
+    <img src="assets/logo.png" class="perfil">
+    <span class="header-links">{{user}}</span>
+    <span class="example-spacer"></span>
+
+	  <span style="color: #666;">|</span>
+    <a class="header-links" (click)="logout()">Logout</a>
+  </mat-toolbar>
+</div>
+
+<div class="inner-sidenav-content">
+
+  <div class="chatBody">
+      <ol class="chat">
+          <li *ngFor="let item of completeChats" [class]="item.class">
+              <div class="avatar"><img [src]="item.avatar" draggable="false"/></div>
+            <div class="msg">
+              <p>{{item.msg}}</p>
+            </div>
+          </li>
+      </ol>
+  </div>
+  <div class="chatSend">
+      <mat-form-field class="chatInput">
+        <input matInput type="text" [(ngModel)]="newChat.msg" (keyup.enter)="sendMsg()" placeholder="Your message" [ngModelOptions]="{standalone: true}">
+      </mat-form-field>
+      <button  color="primary" (click)="sendMsg()" class="chatButton">Send</button>
+  </div>
+</div>

@@ -1,0 +1,24 @@
+<div class="backlogin">
+  <div class="login">
+    <div class="leftlogin">
+      <img src="../../assets/logo.png" class="logo">
+    </div>
+    <div class="leftright">
+
+      <div class="loginform">
+
+          <div class="welcome-text"> Well Come!</div>
+          <span class="instructions-text">Insert your name</span>
+          <br>
+          <br>
+          <mat-form-field style="width:100%">
+            <input matInput type="text" [(ngModel)]="name" placeholder="Name" [ngModelOptions]="{standalone: true}">
+          </mat-form-field>
+          <br>
+          <button mat-raised-button color="primary" (click)="goLogin()" style="background-color: #F1B506; width: 100%">Login</button>
+
+      </div>
+
+    </div>
+  </div>
+</div>
